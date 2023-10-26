@@ -1,0 +1,10 @@
+header {
+    background-color: #4CAF50; /* Green background */
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav > li > a {
+    color: #FFFFFF; /* White text */
+}
+main{
+    min-height: 80vh;
+}
