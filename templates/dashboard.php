@@ -30,6 +30,46 @@ $posts = $objects->query_all();
         text-decoration: none;
         font-size: 10px;
     }
+     /* Card Design */
+     .posts .card {
+            transition: transform 0.2s;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .posts .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .posts .card img, .posts .card video {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .posts .card-body {
+            background-color: #f4f4f4;
+        }
+
+        .user {
+            font-size: 10px;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .user:hover {
+            text-decoration: underline;
+        }
+
+        .posts .btn {
+            margin-right: 5px;
+        }
+
+        .posts .btn i {
+            margin-right: 3px;
+        }
+
 
     @media screen and (max-width: 768px) {
         .posts{
@@ -424,7 +464,7 @@ $posts = $objects->query_all();
                     dataType: "json",
                     success: function(data){
                         if(data.status){
-                            share.innerHTML = `<i class="fa fa-thumbs-up"></i> ${data.shares}`;
+                            share.innerHTML = `<i class="fa fa-share-alt"></i> ${data.shares}`;
                         }else{
                             alert(data.msg);
                         }

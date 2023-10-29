@@ -370,7 +370,7 @@ $posts = $objects->query_all();
                     dataType: "json",
                     success: function(data){
                         if(data.status){
-                            share.innerHTML = `<i class="fa fa-thumbs-up"></i> ${data.shares}`;
+                            share.innerHTML = `<i class="fa fa-share-alt"></i> ${data.shares}`;
                         }else{
                             alert(data.msg);
                         }

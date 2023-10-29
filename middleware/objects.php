@@ -11,8 +11,8 @@ class Objects {
 
     function __construct(){
         $this->host = "localhost";
-        $this->user = "dwightxawft";
-        $this->pass = "timilehin1.";
+        $this->user = "root";
+        $this->pass = "";
         $this->dbms = "service";
         $this->home = "http://localhost/service/";
         $this->connect = mysqli_connect($this->host, $this->user, $this->pass, $this->dbms);
