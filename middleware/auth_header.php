@@ -131,6 +131,7 @@ function html($active){ ?>
                             }
                         })
                     <?php } ?>
+                    $("#navbarNavCentered").hide().fadeIn(3000);
                 </script>
 
 

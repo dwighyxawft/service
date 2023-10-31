@@ -46,5 +46,6 @@
                             }
                         })
                     <?php } ?>
+                    $("#navbarNav").hide().fadeIn(3000);
                 </script>
 <?php } ?>
