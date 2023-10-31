@@ -26,8 +26,8 @@
     <div class="container">
         <div class="row">
             <!-- First column with desktop-only image  -->
-            <div class="col-md-6 d-none d-md-block">
-                <img src="../images/public/register.jpeg" alt="Desktop Image" class="img-fluid h-75  w-100 mt-5">
+            <div class="col-md-6 d-none d-md-flex align-items-center">
+                <img src="../images/public/signup.avif" alt="Desktop Image" class="img-fluid h-50 mt-5">
             </div>
             <!-- Second column with signup card -->
             <div class="col-md-6 d-flex justify-content-center">

@@ -54,8 +54,8 @@
 
             </div>
             <!-- Second column with desktop-only image -->
-                <div class="col-md-6 d-none d-md-block">
-                    <img src="../images/public/login.jpeg" alt="Desktop Image" class="img-fluid h-100 w-100">
+                <div class="col-md-6 d-none d-md-flex align-items-center">
+                    <img src="../images/public/login.avif" alt="Desktop Image" class="img-fluid h-75">
                 </div>
         </div>
     </div>
