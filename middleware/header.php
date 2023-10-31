@@ -21,7 +21,7 @@
                 </style>
                 <nav class="navbar navbar-expand-sm navbar-custom bg-success">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Your Logo Here</a>
+                        <a class="navbar-brand" href="#">SYSFOLIO</a>
                         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                             <span class="navbar-toggler-icon"></span>
                         </button>

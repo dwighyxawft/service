@@ -74,9 +74,10 @@ if(isset($_POST["page"])){
             $facebook = $_POST["facebook"];
             $whatsapp = $_POST["whatsapp"];
             $twitter = $_POST["twitter"];
+            $objects->query = "SELECT * FROM users WHERE id = '$user_id'";
+            $user = $objects->query_result();
 
-            $objects->query = "SELECT * FROM users WHERE email = '$email'";
-            if($objects->total_rows() == 0){
+            if($user["email"] == $email){
                 $objects->query = "UPDATE users SET name = '$name', email = '$email', phone='$phone', occupation='$occupation', state='$state', local_address='$address', website='$website', facebook='$facebook', whatsapp='$whatsapp', twitter='$twitter', instagram='$instagram' WHERE id = '$user_id'";
                 if($objects->execute_query()){
                     $output = ["status"=>true];
@@ -84,9 +85,19 @@ if(isset($_POST["page"])){
                     $output = ["status"=>false, "msg"=>"Error saving user details"];
                 }
             }else{
-                $output = ["status"=>false, "msg"=>"A user already exists with this email"];
+                $objects->query = "SELECT * FROM users WHERE email = '$email'";
+                if($objects->total_rows() == 0){
+                    $objects->query = "UPDATE users SET name = '$name', email = '$email', phone='$phone', occupation='$occupation', state='$state', local_address='$address', website='$website', facebook='$facebook', whatsapp='$whatsapp', twitter='$twitter', instagram='$instagram' WHERE id = '$user_id'";
+                    if($objects->execute_query()){
+                        $output = ["status"=>true];
+                    }else{
+                        $output = ["status"=>false, "msg"=>"Error saving user details"];
+                    }
+                }else{
+                    $output = ["status"=>false, "msg"=>"A user already exists with this email"];
+                }
+    
             }
-
 
            echo json_encode($output);
         }

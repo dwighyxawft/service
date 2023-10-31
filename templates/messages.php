@@ -109,7 +109,7 @@ if($userSelected){
                 <div class="header d-flex justify-content-between align-items-center mb-4">
                     <a href="user.php?user_id=1" class="d-flex align-items-center text-decoration-none text-dark">
                         <img src="../images/users/<?php echo $details["image"];?>" alt="User Name" class="rounded-circle" width="40">
-                        <?php echo $details["image"];?>
+                        <?php echo $details["name"];?>
                     </a>
                     <?php if($details["status"] == "online"){
                         echo '<i class="fa fa-circle online-status ml-2"></i>';

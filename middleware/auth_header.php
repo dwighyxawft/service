@@ -50,7 +50,7 @@ function html($active){ ?>
         <div class="container-fluid">
             <!-- Brand Logo -->
             <a class="navbar-brand" href="#">
-                <img src="path-to-your-brand-logo.png" alt="Brand Logo" width="30" height="24">
+                SYSFOLIO
             </a>
             <!-- Toggler for offcanvas -->
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
